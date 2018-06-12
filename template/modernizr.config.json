@@ -1,0 +1,23 @@
+{
+  "minify": true,
+  "options": [
+    "mq",
+    "prefixed",
+    "prefixedCSS",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/touchevents",
+    "test/pointerevents",
+    "test/video",
+    "test/css/positionsticky",
+    "test/css/flexbox",
+    "test/css/flexboxlegacy",
+    "test/css/flexboxtweener",
+    "test/css/flexwrap",
+    "test/css/vhunit",
+    "test/css/vmaxunit",
+    "test/css/vminunit",
+    "test/css/vwunit"
+  ]
+}

@@ -1,0 +1,45 @@
+@import 'variabes/easing-vars';
+
+.page-enter-active {
+  transition: opacity .4s var(--ease-quad-in);
+}
+
+.page-leave-active {
+  transition: opacity .4s var(--ease-quad-out);
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0
+}
+
+.page-leave,
+.page-enter-to {
+  opacity: 1;
+}
+
+/**
+ * Transitions between layouts
+ */
+.layout-enter-active,
+.layout-leave-to {
+  transition: opacity .3s var(--ease-quad-out);
+}
+.layout-enter, .layout-leave-to {
+  opacity: 0;
+}
+
+/**
+ * Generic fade
+ */
+.fade-enter-active {
+  transition: opacity .5s var(--ease-quad-in);
+}
+.fade-leave-active {
+  transition: opacity .4s var(--ease-quad-out);
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

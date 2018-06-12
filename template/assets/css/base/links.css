@@ -1,0 +1,28 @@
+@import 'variables/color-vars';
+@import 'variables/easing-vars';
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 100ms color var(--ease-cubic-out);
+}
+
+.no-touchevents {
+  @nest & a:hover {
+    color: var(--color-off-black);
+  }
+}
+
+button:focus {
+  outline: 0;
+}
+
+textarea,
+input,
+button,
+label,
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

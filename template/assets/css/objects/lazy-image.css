@@ -1,0 +1,12 @@
+@import 'variables/color-vars';
+
+.o-lazy-img-wrapper {
+  background: var(--color-cold-gray);
+}
+.o-lazy-img {
+  opacity: 0;
+  transition: 300ms opacity ease-out;
+}
+.o-lazy-img[lazy='loaded'] {
+  opacity: 1
+}
