@@ -16,6 +16,9 @@
     "predev": "npm run modernizr",
     "precommit": "npm run lint"
   },
+  "engine": {
+    "node": ">=8.9.1"
+  },
   "dependencies": {
     "nuxt": "^1.3.0"
   },
